@@ -161,6 +161,7 @@ type AI struct {
 	GeneralModule `koanf:",squash"`
 	Anthropic     Anthropic `koanf:"anthropic"`
 	Gemini        Gemini    `koanf:"gemini"`
+	Grok          Grok      `koanf:"grok"`
 }
 
 type Anthropic struct {
@@ -168,6 +169,10 @@ type Anthropic struct {
 }
 
 type Gemini struct {
+	Prompts []AIPrompt `koanf:"prompts"`
+}
+
+type Grok struct {
 	Prompts []AIPrompt `koanf:"prompts"`
 }
 

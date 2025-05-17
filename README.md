@@ -21,7 +21,7 @@ Walker is a highly extendable application launcher that doesn't hold back on fea
 ## Builtin Modules
 
 - ai
-  - anthropic (Claude 3.5), gemini (gemini-2.0-flash)
+  - anthropic (Claude 3.5), gemini (gemini-2.0-flash), grok (Grok 3 & 2)
   - define different prompts
 - runner
   - parses your shell config for aliases

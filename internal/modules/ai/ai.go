@@ -64,6 +64,7 @@ func (ai *AI) Refresh() {
 type providerInitFunction func(config.AI, func(args ...interface{})) providers.Provider
 
 var knownProviders = map[string]providerInitFunction{
+	"grok":      providers.NewGrokProvider,
 	"gemini":    providers.NewGeminiProvider,
 	"anthropic": providers.NewAnthropicProvider,
 }
